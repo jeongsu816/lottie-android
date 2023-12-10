@@ -6,6 +6,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.ColorFilter;
 import android.graphics.Matrix;
 import android.graphics.Paint;
@@ -1670,7 +1671,7 @@ public class LottieDrawable extends Drawable implements Drawable.Callback, Anima
       // bitmap to avoid allocating and copying the empty space on the left and top. renderWidth and renderHeight take this into account.
       renderingMatrix.postTranslate(-softwareRenderingTransformedBounds.left, -softwareRenderingTransformedBounds.top);
 
-      softwareRenderingBitmap.eraseColor(0);
+      softwareRenderingBitmap.eraseColor(Color.RED);
       compositionLayer.draw(softwareRenderingCanvas, renderingMatrix, alpha);
 
       // Calculate the dst bounds.

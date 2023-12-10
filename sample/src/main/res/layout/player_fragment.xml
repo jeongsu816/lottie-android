@@ -25,6 +25,17 @@
                 android:scaleType="centerInside"
                 android:layout_gravity="center"
                 android:background="@drawable/outline"
+                android:visibility="invisible"
+                app:lottie_asyncUpdates="enabled"
+                app:lottie_autoPlay="true" />
+
+            <com.airbnb.lottie.LottieDrawableTestView
+                android:id="@+id/lottieDrawableTestView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_gravity="center"
+                android:background="@drawable/outline"
                 app:lottie_asyncUpdates="enabled"
                 app:lottie_autoPlay="true" />
 

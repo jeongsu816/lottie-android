@@ -182,6 +182,7 @@ class PlayerFragment : BaseFragment(R.layout.player_fragment) {
                 RenderMode.HARDWARE
             }
             binding.animationView.renderMode = renderMode
+            binding.lottieDrawableTestView.setRenderMode(renderMode)
             binding.controlBar.hardwareAccelerationToggle.isActivated = binding.animationView.renderMode == RenderMode.HARDWARE
         }
 
@@ -424,6 +425,7 @@ class PlayerFragment : BaseFragment(R.layout.player_fragment) {
         }
 
         binding.animationView.setComposition(composition)
+        binding.lottieDrawableTestView.setComposition(composition)
         binding.controlBar.hardwareAccelerationToggle.isActivated = binding.animationView.renderMode == RenderMode.HARDWARE
         binding.animationView.setPerformanceTrackingEnabled(true)
         var renderTimeGraphRange = 4f

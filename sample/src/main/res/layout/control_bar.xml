@@ -21,6 +21,11 @@
             app:src="@drawable/ic_chart"
             app:text="@string/control_bar_render_graph" />
         <com.airbnb.lottie.samples.views.ControlBarItemToggleView
+            android:id="@+id/hardwareAccelerationToggle"
+            style="@style/ControlBarItem"
+            app:src="@drawable/ic_memory"
+            app:text="@string/control_bar_hardware_acceleration" />
+        <com.airbnb.lottie.samples.views.ControlBarItemToggleView
             android:id="@+id/masksAndMattesToggle"
             style="@style/ControlBarItem"
             app:src="@drawable/ic_show_masks_and_mattes"
@@ -53,11 +58,6 @@
             style="@style/ControlBarItem"
             app:src="@drawable/ic_layers"
             app:text="@string/control_bar_key_paths" />
-        <com.airbnb.lottie.samples.views.ControlBarItemToggleView
-            android:id="@+id/hardwareAccelerationToggle"
-            style="@style/ControlBarItem"
-            app:src="@drawable/ic_memory"
-            app:text="@string/control_bar_hardware_acceleration" />
         <com.airbnb.lottie.samples.views.ControlBarItemToggleView
             android:id="@+id/mergePathsToggle"
             style="@style/ControlBarItem"
